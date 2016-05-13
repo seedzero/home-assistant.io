@@ -34,6 +34,7 @@ $ sudo pip3 install --upgrade cython
 
 Then get the OpenZWave files and switch to the `python3` branch:
 <p class='note warning'>Do not use root to build python-openzwave as it will surely fail.</p>
+<p class='note warning'>Take care with the following commands to use backticks and not quotes. ``which python3`` is correct, not `'which python3'`. See [Command Substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html).</p>
 ```bash
 $ git clone https://github.com/OpenZWave/python-openzwave.git
 $ cd python-openzwave
@@ -89,7 +90,7 @@ $ ls /dev/ttyACM*
 ```
 
 <p class='note'>
-Depending on what's plugged into your USB ports, the name found above may change. You an lock in a name, such as `/dev/zwave`, by following [these instructions](http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/). 
+Depending on what's plugged into your USB ports, the name found above may change. You can lock in a name, such as `/dev/zwave`, by following [these instructions](http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/). 
 </p>
 
 #### {% linkable_title Events %}
